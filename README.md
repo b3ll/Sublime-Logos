@@ -12,6 +12,10 @@ Stick the .tmLanguage file in `~/Library/Application Support/Sublime Text 2/Pack
 
 I added Objective-C's tmLanguage from the Sublime app directly to this so customization would be easier (still don't fully understand Sublime's includes and such for syntax definitions), so this may break in the future.
 
-%init and %hook make much more sense now when picked up, and don't break Sublime Text's Objective-C syntax definitions. Cleaned up some other variable recognition as well as property invocations (obj.doThis.doThat, etc.).
+The main reason I included it was to treat %group and %hook as @implementation. Sublime didn’t like me overriding the defaults :(
+
+- %group and %hook make much more sense now when picked up, and don't break Sublime Text's Objective-C syntax definitions.
+- Cleaned up some property invocations (obj.doThis.doThat, etc.).
+- Added some other variable and type recognition as well (instancetype)
 
 Haven't tried it on Sublime Text 2, since I've fully switched to 3.
